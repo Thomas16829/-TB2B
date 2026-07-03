@@ -119,7 +119,7 @@ iframe {
 <div class="hero">
   <h1>B2B Global Supply Platform</h1>
   <p>Fast • Reliable • Factory Direct</p>
-  <button class="btn" onclick="window.open('https://wa.me/123456789')">
+  <button class="btn" onclick="window.open('https://wa.me/qr/XBVZACVXGQOJL1')">
     Get Quote
   </button>
 </div>
@@ -154,8 +154,8 @@ iframe {
 
 <script>
 async function loadProducts() {
-  const res = await fetch("
-tb2b-9di.pages.dev");
+  const API = "https://d62a83b2.tb2b-9di.pages.dev";
+  const res = await fetch(API);
   const data = await res.json();
 
   document.getElementById("products").innerHTML = data.map(p => `
